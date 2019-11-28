@@ -4,9 +4,25 @@
 [PYTHON]
 
 
-Using the popular automation website IFTTT, create two IFTTT applets, both will be triggered by our Python app which will consume the data from the Coinmarketcap API. An IFTTT applet is composed of two parts: a trigger and an action.
+Using the popular automation website IFTTT, create IFTTT applets,using Coinmarketcap API. 
 
 
+-----------
+
+We’re going to create two IFTTT applets:
+
+One for emergency notification when Bitcoin price falls under a certain threshold; 
+
+and another for regular Telegram updates on the Bitcoin price.
+
+
+Both will be triggered by our Python app which will consume the data from the Coinmarketcap API.
+
+
+In our case, the trigger will be a webhook service provided by IFTTT. You can think of webhooks as “user-defined HTTP callbacks".
+
+
+Our Python app will make an HTTP request to the webhook URL which will trigger an action. Now, this is the fun part—the action could be almost anything you want. IFTTT offers a multitude of actions(as i mentioned in the desc) like sending an email, updating a Google Spreadsheet and even calling your phone.
 
  To use IFTTT you’ll first need to set up a new account and install their mobile app (if you want to receive phone notifications from your Python app).
  
