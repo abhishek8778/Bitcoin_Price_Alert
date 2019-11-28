@@ -27,7 +27,37 @@ Our Python app will make an HTTP request to the webhook URL which will trigger a
  To use IFTTT you’ll first need to set up a new account and install their mobile app (if you want to receive phone notifications from your Python app).
  
  
- To see the documentation on how to use the IFTTT webhooks go to <a href="https://ifttt.com/maker_webhooks">this page</a> and click on the “Documentation” button in the top right corner. The documentation page contains the webhook URL and it looks like this:
+Sending a Test IFTTT Notification
+Now we can move onto the IFTTT side of things. To use IFTTT you’ll first need to set up a new account and install their mobile app (if you want to receive phone notifications from your Python app). Once you set that up, we’re going to create a new IFTTT applet for testing purposes.
+
+
+
+To create a new test applet follow these steps:
+
+
+Click on the big “this” button
+
+
+Search for the “webhooks” service and select the “Receive a web request” trigger
+
+
+Let’s name the event test_event
+
+
+Now select the big “that” button
+
+
+Search for the “notifications” service and select the “Send a notification from the IFTTT app”
+
+
+Change the message to I just triggered my first IFTTT action! and click on “Create action”
+
+
+Click on the “Finish” button and we’re done
+ 
+ 
+ 
+To see the documentation on how to use the IFTTT webhooks go to <a href="https://ifttt.com/maker_webhooks">this page</a> and click on the “Documentation” button in the top right corner. The documentation page contains the webhook URL and it looks like this:
 
 https://maker.ifttt.com/trigger/{event}/with/key/{your-IFTTT-key}
 
