@@ -3,6 +3,11 @@
 
 [PYTHON]
 
+
+Using the popular automation website IFTTT, create two IFTTT applets, both will be triggered by our Python app which will consume the data from the Coinmarketcap API. An IFTTT applet is composed of two parts: a trigger and an action.
+
+
+
  To use IFTTT you’ll first need to set up a new account and install their mobile app (if you want to receive phone notifications from your Python app).
  
  
