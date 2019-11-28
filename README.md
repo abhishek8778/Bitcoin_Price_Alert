@@ -64,7 +64,7 @@ Creating IFTTT Applets
 We need to create two new IFTTT applets: one for emergency Bitcoin price notifications and one for regular updates.
 
 
-
+1.
 Emergency bitcoin price notification applet:
 
 Choose the “webhooks” service and select the “Receive a web request” trigger
@@ -87,9 +87,9 @@ Optionally you could add a Link URL to the Coinmarketcap Bitcoin page: https://c
 
 Create the action and finish setting up the applet
 
+....
 
-
-
+2.
 Regular price updates applet:
 
 Again choose the “webhooks” service and select the “Receive a web request” trigger
