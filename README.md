@@ -61,7 +61,7 @@ You’ll need to substitute the {event} part with whatever name you gave, when y
 
 Creating IFTTT Applets
 
-Now we’re finally ready for the main part. Before starting with the code we need to create two new IFTTT applets: one for emergency Bitcoin price notifications and one for regular updates.
+We need to create two new IFTTT applets: one for emergency Bitcoin price notifications and one for regular updates.
 
 
 
@@ -74,6 +74,10 @@ Give it a title, like “Bitcoin price emergency!”
 Set the message to Bitcoin price is at ${{Value1}}. Buy or sell now! (we’ll return to the {{Value1}} part later on)
 Optionally you could add a Link URL to the Coinmarketcap Bitcoin page: https://coinmarketcap.com/currencies/bitcoin/
 Create the action and finish setting up the applet
+
+
+
+
 Regular price updates applet:
 
 Again choose the “webhooks” service and select the “Receive a web request” trigger
