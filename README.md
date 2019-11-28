@@ -9,5 +9,5 @@
 https://maker.ifttt.com/trigger/{event}/with/key/{your-IFTTT-key}
 
 
-Next up, you’ll need to substitute the {event} part with whatever name you gave our event in step 3, when you created the applet. The {your-IFTTT-key} part is already populated with your IFTTT key.
+You’ll need to substitute the {event} part with whatever name you gave, when you created the applet. The {your-IFTTT-key} part is already populated with your IFTTT key.
  
