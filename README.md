@@ -33,19 +33,19 @@ Now we can move onto the IFTTT side of things. To use IFTTT you’ll first need 
 
 To create a new test applet follow these steps:
 
-Click on the big “this” button
+-Click on the big “this” button
 
-Search for the “webhooks” service and select the “Receive a web request” trigger
+-Search for the “webhooks” service and select the “Receive a web request” trigger
 
-Lets name the event test_event
+-Lets name the event test_event
 
-Now select the big “that” button
+-Now select the big “that” button
 
-Search for the “notifications” service and select the “Send a notification from the IFTTT app”
+-Search for the “notifications” service and select the “Send a notification from the IFTTT app”
 
-Change the message to I just triggered my first IFTTT action! and click on “Create action”
+-Change the message to I just triggered my first IFTTT action! and click on “Create action”
 
-Click on the “Finish” button and we’re done
+-Click on the “Finish” button and we’re done
  
  
  
@@ -57,7 +57,44 @@ https://maker.ifttt.com/trigger/{event}/with/key/{your-IFTTT-key}
 You’ll need to substitute the {event} part with whatever name you gave, when you created the applet. The {your-IFTTT-key} part is already populated with your IFTTT key.
 
 
+----------
 
+Creating IFTTT Applets
+
+Now we’re finally ready for the main part. Before starting with the code we need to create two new IFTTT applets: one for emergency Bitcoin price notifications and one for regular updates.
+
+
+
+Emergency bitcoin price notification applet:
+
+Choose the “webhooks” service and select the “Receive a web request” trigger
+Name the event bitcoin_price_emergency
+For the action select the “Notifications” service and select the “Send a rich notification from the IFTTT app” action
+Give it a title, like “Bitcoin price emergency!”
+Set the message to Bitcoin price is at ${{Value1}}. Buy or sell now! (we’ll return to the {{Value1}} part later on)
+Optionally you could add a Link URL to the Coinmarketcap Bitcoin page: https://coinmarketcap.com/currencies/bitcoin/
+Create the action and finish setting up the applet
+Regular price updates applet:
+
+Again choose the “webhooks” service and select the “Receive a web request” trigger
+
+
+Name the event bitcoin_price_update
+
+
+For the action select the “Telegram” service and select the “Send message” action
+
+
+Set the message text to: Latest bitcoin prices:<br>{{Value1}}
+
+
+Create the action and finish with the applet
+
+
+Note: When creating this applet you will have to authorize the IFTTT Telegram bot.
+
+
+-----------
 [IMPORTANT]
 
 An important thing is to avoid sending out requests too frequently, for two reasons:
