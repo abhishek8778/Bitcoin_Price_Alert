@@ -12,19 +12,18 @@ Using the popular automation website IFTTT, create IFTTT applets,using Coinmarke
 We’re going to create two IFTTT applets:
 
 One for emergency notification when Bitcoin price falls under a certain threshold; 
-
 and another for regular Telegram updates on the Bitcoin price.
-
 
 Both will be triggered by our Python app which will consume the data from the Coinmarketcap API.
 
 
 In our case, the trigger will be a webhook service provided by IFTTT. You can think of webhooks as “user-defined HTTP callbacks".
 
-
 Our Python app will make an HTTP request to the webhook URL which will trigger an action. Now, this is the fun part—the action could be almost anything you want. IFTTT offers a multitude of actions(as i mentioned in the desc) like sending an email, updating a Google Spreadsheet and even calling your phone.
 
  To use IFTTT you’ll first need to set up a new account and install their mobile app (if you want to receive phone notifications from your Python app).
+ 
+ 
  
  
 Sending a Test IFTTT Notification
@@ -34,24 +33,17 @@ Now we can move onto the IFTTT side of things. To use IFTTT you’ll first need 
 
 To create a new test applet follow these steps:
 
-
 Click on the big “this” button
-
 
 Search for the “webhooks” service and select the “Receive a web request” trigger
 
-
-Let’s name the event test_event
-
+Lets name the event test_event
 
 Now select the big “that” button
 
-
 Search for the “notifications” service and select the “Send a notification from the IFTTT app”
 
-
 Change the message to I just triggered my first IFTTT action! and click on “Create action”
-
 
 Click on the “Finish” button and we’re done
  
