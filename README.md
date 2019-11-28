@@ -68,11 +68,23 @@ We need to create two new IFTTT applets: one for emergency Bitcoin price notific
 Emergency bitcoin price notification applet:
 
 Choose the “webhooks” service and select the “Receive a web request” trigger
+
+
 Name the event bitcoin_price_emergency
+
+
 For the action select the “Notifications” service and select the “Send a rich notification from the IFTTT app” action
+
+
 Give it a title, like “Bitcoin price emergency!”
+
+
 Set the message to Bitcoin price is at ${{Value1}}. Buy or sell now! (we’ll return to the {{Value1}} part later on)
+
+
 Optionally you could add a Link URL to the Coinmarketcap Bitcoin page: https://coinmarketcap.com/currencies/bitcoin/
+
+
 Create the action and finish setting up the applet
 
 
